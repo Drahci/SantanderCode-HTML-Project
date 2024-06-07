@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <main>
+        <h1>Tabelas no HTML</h1>
+        <section id="alunos">
+            <h2>Tabela de Alunos</h2>
+            <table border="7">
+                <thead>
+                    <!-- A tag <thead> é usada em tabelas HTML para agrupar o conteúdo do cabeçalho da tabela, e dentro dela, utilizamos a tag <th> (table header) em vez de <td> (table data) por várias razões semânticas e funcionais: -->
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Matrícula</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Richard</td>
+                        <td>richard.ricciardi@gmail.com</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Mohamed</td>
+                        <td>mohalakiss9999@gmail.com</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Cant</td>
+                        <td>cantcan@gmail.com</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>  
+
+        <section id="financas">
+            <h2>Tabela de controle financeiro</h2>
+            <table border="7">
+                <thead>
+                    <tr>
+                        <th>DATA</th>
+                        <th>TIPO</th>
+                        <th>DESCRIÇÃO</th>
+                        <th>VALOR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">15/02/2024</td>
+                        <td>Despesa</td>
+                        <td>Almoço</td>
+                        <td>R$15,69</td>
+                    </tr>
+                    <tr>
+                        <!-- <td>15/02/2024</td> -->
+                        <td>Receita</td>
+                        <td>Receita</td>
+                        <td>R$250,55</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
